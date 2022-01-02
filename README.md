@@ -38,3 +38,10 @@ Two popular examples of regularization procedures for linear regression are:
 
 These methods are effective to use when there is collinearity in your input values and ordinary least squares would overfit the training data.
 
+## Co-efficient from Normal equations
+
+![image](https://user-images.githubusercontent.com/60442877/147891701-e26a6652-50c1-4a50-b2cf-5b6071a39790.png)
+
+
+
+
