@@ -70,7 +70,8 @@ In statistics, the logistic model (or logit model) is used to model the probabil
 
 ## Logistic Model
 
-Let us try to understand logistic regression by considering a logistic model with given parameters, then seeing how the coefficients can be estimated from data. Consider a model with two predictors, {\displaystyle x_{1}}x_{1} and {\displaystyle x_{2}}x_{2}, and one binary (Bernoulli) response variable {\displaystyle Y}Y, with parameter {\displaystyle p=P(Y=1)}{\displaystyle p=P(Y=1)}. We assume a linear relationship between the predictor variables and the log-odds (also called logit) of the event that {\displaystyle Y=1}Y=1. This linear relationship can be written in the following mathematical form (where ℓ is the log-odds, {\displaystyle b}b is the base of the logarithm, and {\displaystyle \beta _{i}}\beta _{i} are parameters of the model):
+![image](https://user-images.githubusercontent.com/60442877/147892500-285cc847-ada8-42d1-a96e-373164a8e026.png)
+
 
 
 
