@@ -42,6 +42,19 @@ These methods are effective to use when there is collinearity in your input valu
 
 ![image](https://user-images.githubusercontent.com/60442877/147891701-e26a6652-50c1-4a50-b2cf-5b6071a39790.png)
 
+## Metrics for model evaluation
+
+- R-Squared value： This value ranges from 0 to 1. Value ‘1’ indicates predictor perfectly accounts for all the variation in Y. Value ‘0’ indicates that predictor ‘x’ accounts for no variation in ‘y’.
+- Regression sum of squares (SSR)： This gives information about how far estimated regression line is from the horizontal ‘no relationship’ line (average of actual output).
+- Sum of Squared error (SSE)： How much the target value varies around the regression line (predicted value).
+- Total sum of squares (SSTO)： This tells how much the data point move around the mean.
+- Correlation co-efficient (r)： This is related to value of ‘r-squared’ which can be observed from the notation itself. It ranges from -1 to 1. r = (+/-) sqrt(r²). If the value of b1 is negative, then ‘r’ is negative whereas if the value of ‘b1’ is positive then, ‘r’ is positive. It is unitless.
+
+## Is the range of R-Square always between 0 to 1?
+
+Value of R2 may end up being negative if the regression line is made to pass through a point forcefully. This will lead to forcefully making regression line to pass through the origin (no intercept) giving an error higher than the error produced by the horizontal line. This will happen if the data is far away from the origin.
+
+
 
 
 
