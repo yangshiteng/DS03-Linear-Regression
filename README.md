@@ -164,3 +164,23 @@ The probability distribution that defines multi-class probabilities is called a 
 Changing logistic regression from binomial to multinomial probability requires a change to the loss function used to train the model (e.g. log loss to cross-entropy loss), and a change to the output from a single probability value to one probability for each class label.
 
 
+# Generalized Linear Model
+
+In statistics, a generalized linear model (GLM) is a flexible generalization of ordinary linear regression. The GLM generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value.
+
+## Overview
+
+![image](https://user-images.githubusercontent.com/60442877/147896503-1c9ead21-8ee7-4536-989a-2183e172b75e.png)
+
+## Model components
+
+![image](https://user-images.githubusercontent.com/60442877/147896518-d703ce12-c883-4cf6-8d1d-2a731ef8443d.png)
+
+## Common distributions with typical uses and canonical link functions
+
+![image](https://user-images.githubusercontent.com/60442877/147896623-a02f68af-b8e2-4e59-b4d0-e1db0e0fa18d.png)
+
+
+
+
+
