@@ -11,6 +11,7 @@ Linear regression has many practical uses. Most applications fall into one of th
 
 Linear regression models are often fitted using the least squares approach, but they may also be fitted in other ways, such as by minimizing the "lack of fit" in some other norm (as with least absolute deviations regression), or by minimizing a penalized version of the least squares cost function as in ridge regression (L2-norm penalty) and lasso (L1-norm penalty). Conversely, the least squares approach can be used to fit models that are not linear models. Thus, although the terms "least squares" and "linear model" are closely linked, they are not synonymous.
 
+
 ## Formulation
 
 ![image](https://user-images.githubusercontent.com/60442877/147891201-066a731d-6e34-4fdc-abce-7ab0e6420572.png)
@@ -67,6 +68,35 @@ In statistics, the logistic model (or logit model) is used to model the probabil
 
 - Logistic regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable, although many more complex extensions exist. In regression analysis, logistic regression (or logit regression) is estimating the parameters of a logistic model (a form of binary regression). Mathematically, a binary logistic model has a dependent variable with two possible values, such as pass/fail which is represented by an indicator variable, where the two values are labeled "0" and "1". In the logistic model, the log-odds (the logarithm of the odds) for the value labeled "1" is a linear combination of one or more independent variables ("predictors")
 - The independent variables can each be a binary variable (two classes, coded by an indicator variable) or a continuous variable (any real value). The corresponding probability of the value labeled "1" can vary between 0 (certainly the value "0") and 1 (certainly the value "1"), hence the labeling; the function that converts log-odds to probability is the logistic function, hence the name. The unit of measurement for the log-odds scale is called a logit, from logistic unit, hence the alternative names. Analogous models with a different sigmoid function instead of the logistic function can also be used, such as the probit model; 
+
+
+## What is Wrong with Linear Regression for Classification?
+
+The linear regression model can work well for regression, but fails for classification. Why is that? In case of two classes, you could label one of the classes with 0 and the other with 1 and use linear regression. Technically it works and most linear model programs will spit out weights for you. But there are a few problems with this approach:
+
+A linear model does not output probabilities, but it treats the classes as numbers (0 and 1) and fits the best hyperplane (for a single feature, it is a line) that minimizes the distances between the points and the hyperplane. So it simply interpolates between the points, and you cannot interpret it as probabilities.
+
+## Types of Logistic Regression
+
+1. Binary Logistic Regression
+The categorical response has only two 2 possible outcomes. Example: Spam or Not
+
+2. Multinomial Logistic Regression
+Three or more categories without ordering. Example: Predicting which food is preferred more (Veg, Non-Veg, Vegan)
+
+3. Ordinal Logistic Regression
+Three or more categories with ordering. Example: Movie rating from 1 to 5
+
+## Decision Boundary
+
+To predict which class a data belongs, a threshold can be set. Based upon this threshold, the obtained estimated probability is classified into classes.
+
+Say, if predicted_value ≥ 0.5, then classify email as spam else as not spam.
+
+Decision boundary can be linear or non-linear. Polynomial order can be increased to get complex decision boundary.
+
+
+
 
 ## Logistic Model
 
