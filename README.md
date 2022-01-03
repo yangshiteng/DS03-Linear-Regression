@@ -108,16 +108,27 @@ Decision boundary can be linear or non-linear. Polynomial order can be increased
 ![image](https://user-images.githubusercontent.com/60442877/147892787-9940b042-9ea1-47c5-8f9e-41fed75f5ccb.png)
 
 
+## Multinomial Logistic Regression
 
+Multinomial logistic regression is an extension of logistic regression that adds native support for multi-class classification problems.
 
+Logistic regression, by default, is limited to two-class classification problems. Some extensions like one-vs-rest can allow logistic regression to be used for multi-class classification problems, although they require that the classification problem first be transformed into multiple binary classification problems.
 
+Instead, the multinomial logistic regression algorithm is an extension to the logistic regression model that involves changing the loss function to cross-entropy loss and predict probability distribution to a multinomial probability distribution to natively support multi-class classification problems.
 
+By default, logistic regression cannot be used for classification tasks that have more than two class labels, so-called multi-class classification.
 
+Instead, it requires modification to support multi-class classification problems.
 
+One popular approach for adapting logistic regression to multi-class classification problems is to split the multi-class classification problem into multiple binary classification problems and fit a standard logistic regression model on each subproblem. Techniques of this type include one-vs-rest and one-vs-one wrapper models.
 
+An alternate approach involves changing the logistic regression model to support the prediction of multiple class labels directly. Specifically, to predict the probability that an input example belongs to each known class label.
 
+The probability distribution that defines multi-class probabilities is called a multinomial probability distribution. A logistic regression model that is adapted to learn and predict a multinomial probability distribution is referred to as Multinomial Logistic Regression. Similarly, we might refer to default or standard logistic regression as Binomial Logistic Regression.
 
+- Binomial Logistic Regression: Standard logistic regression that predicts a binomial probability (i.e. for two classes) for each input example.
+- Multinomial Logistic Regression: Modified version of logistic regression that predicts a multinomial probability (i.e. more than two classes) for each input example.
 
-
+Changing logistic regression from binomial to multinomial probability requires a change to the loss function used to train the model (e.g. log loss to cross-entropy loss), and a change to the output from a single probability value to one probability for each class label.
 
 
