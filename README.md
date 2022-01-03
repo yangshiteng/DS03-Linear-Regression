@@ -73,6 +73,21 @@ In statistics, the logistic model (or logit model) is used to model the probabil
 ![image](https://user-images.githubusercontent.com/60442877/147892500-285cc847-ada8-42d1-a96e-373164a8e026.png)
 
 
+## Model fitting
+
+![image](https://user-images.githubusercontent.com/60442877/147892787-9940b042-9ea1-47c5-8f9e-41fed75f5ccb.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
