@@ -56,7 +56,39 @@ These methods are effective to use when there is collinearity in your input valu
 Value of R2 may end up being negative if the regression line is made to pass through a point forcefully. This will lead to forcefully making regression line to pass through the origin (no intercept) giving an error higher than the error produced by the horizontal line. This will happen if the data is far away from the origin.
 
 
+# Ridge and Lasso Regression: L2 and L1 Regularizationi
 
+As I’m using the term linear, first let’s clarify that linear models are one of the simplest way to predict output using a linear function of input features.
+
+![image](https://user-images.githubusercontent.com/60442877/147895633-58adeea5-fc2b-483c-abbe-bdb7563ad815.png)
+
+In the equation above, we have shown the linear model based on the n number of features. Considering only a single feature as you probably already have understood that w[0] will be slope and b will represent intercept. Linear regression looks for optimizing w and b such that it minimizes the cost function. The cost function can be written as
+
+![image](https://user-images.githubusercontent.com/60442877/147895651-e10579c2-0831-4ace-900f-51163a0bc675.png)
+
+n the equation above I have assumed the data-set has M instances and p features. Once we use linear regression on a data-set divided in to training and test set, calculating the scores on training and test set can give us a rough idea about whether the model is suffering from over-fitting or under-fitting. The chosen linear model can be just right also, if you’re lucky enough! If we have very few features on a data-set and the score is poor for both training and test set then it’s a problem of under-fitting. On the other hand if we have large number of features and test score is relatively poor than the training score then it’s the problem of over-generalization or over-fitting. Ridge and Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression.
+
+## Ridge Regression
+
+In ridge regression, the cost function is altered by adding a penalty equivalent to square of the magnitude of the coefficients.
+
+![image](https://user-images.githubusercontent.com/60442877/147895682-dbc3ac8d-7b12-435b-91b7-b519a1459e9c.png)
+
+This is equivalent to saying minimizing the cost function under the condition as below
+
+![image](https://user-images.githubusercontent.com/60442877/147895706-4b09c634-8abd-45df-9c57-25ad22d5584c.png)
+
+So ridge regression puts constraint on the coefficients (w). The penalty term (lambda) regularizes the coefficients such that if the coefficients take large values the optimization function is penalized. So, ridge regression shrinks the coefficients and it helps to reduce the model complexity and multi-collinearity. When λ → 0 , the cost function becomes similar to the linear regression cost function. So lower the constraint (low λ) on the features, the model will resemble linear regression model. 
+
+## Lasso Regression 
+
+The cost function for Lasso (least absolute shrinkage and selection operator) regression can be written as
+
+![image](https://user-images.githubusercontent.com/60442877/147895775-1f9b460e-1474-46c5-9d29-49ebb66a067a.png)
+
+Just like Ridge regression cost function, for lambda =0, the equation above reduces to the cost function of ordinary linear regression. The only difference is instead of taking the square of the coefficients, magnitudes are taken into account. This type of regularization (L1) can lead to zero coefficients i.e. some of the features are completely neglected for the evaluation of output. So Lasso regression not only helps in reducing over-fitting but it can help us in feature selection. 
+
+## Lasso regression can lead to feature selection whereas Ridge can only shrink coefficients close to zero.
 
 
 
