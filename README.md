@@ -163,6 +163,27 @@ The probability distribution that defines multi-class probabilities is called a 
 
 Changing logistic regression from binomial to multinomial probability requires a change to the loss function used to train the model (e.g. log loss to cross-entropy loss), and a change to the output from a single probability value to one probability for each class label.
 
+## 3.8 Video Tutorial 
+
+###  3.81 https://www.youtube.com/watch?v=yIYKR4sgzI8
+
+- Logistic Regression predicts whether something is True or False instead of predicting something continuous
+- Instead of fitting a line to the data like linear regression, logistic regression fits an 'S' shaped 'logistic function'
+![image](https://user-images.githubusercontent.com/60442877/149512667-7a4917f2-d9ae-4c5d-802e-f73ad85a73c0.png)
+- Logistic regression's ability to provide probabilities and classify new samples using continuous and discrete measurements make it a popular machine learning method
+- One big difference between linear regression and logistic regression is how the line is fit to the data
+- With linear regression, we fit the line using 'Least Squares', we also use the residuals to calculate the R-square to compare simple models to complicated models
+- However, logistic regression doesn't have the same concept of a 'residual', so it can't use least squares and it can't calculate R-square, instead, it uses 'Maximum Likelihood'
+
+### 3.82 https://www.youtube.com/watch?v=vN5cNN2-HWE
+
+- Logistic Regression is a specific type of Generalized Linear Model
+![image](https://user-images.githubusercontent.com/60442877/149521205-058cdb64-cc53-4842-ae2b-c0a40749cce0.png)
+- In terms of the coefficients, logistic regression is the exact same as good linear regresssion models except the coefficients are in terms of the log(odds)
+
+### 3.83 https://www.youtube.com/watch?v=BfKanl1aSG0
+
+
 
 # 4. Generalized Linear Model
 
