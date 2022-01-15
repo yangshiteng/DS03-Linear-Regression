@@ -196,7 +196,7 @@ Changing logistic regression from binomial to multinomial probability requires a
 ![image](https://user-images.githubusercontent.com/60442877/149610769-e6f7f370-9947-427d-be25-3f8ac690eab7.png)
 - P value is calculated by following equation:
 ![image](https://user-images.githubusercontent.com/60442877/149610787-fc2832f9-778e-4861-b4a5-6d96056b4e5c.png)
-
+- The P-value is for the hypothesis test with Null Hypothsis: There is no difference between Overall probability model and the fitted logistic regression model
 
 ### 3.85 https://www.youtube.com/watch?v=9T0wlKdew6I
 
