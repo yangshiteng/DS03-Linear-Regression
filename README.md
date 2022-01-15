@@ -183,7 +183,7 @@ Changing logistic regression from binomial to multinomial probability requires a
 
 ### 3.83 https://www.youtube.com/watch?v=BfKanl1aSG0
 
-### 3.89 https://www.youtube.com/watch?v=xxFYro8QuXA
+### 3.84 https://www.youtube.com/watch?v=xxFYro8QuXA
 
 - R-squared is a goodness-of-fit measure for linear regression models. This statistic indicates the percentage of the variance in the dependent variable that the independent variables explain collectively. R-squared measures the strength of the relationship between your model and the dependent variable on a convenient 0 – 100% scale.
 - R-Squared is a statistical measure of fit that indicates how much variation of a dependent variable is explained by the independent variable(s) in a regression model.
@@ -198,8 +198,18 @@ Changing logistic regression from binomial to multinomial probability requires a
 ![image](https://user-images.githubusercontent.com/60442877/149610787-fc2832f9-778e-4861-b4a5-6d96056b4e5c.png)
 
 
+### 3.85 https://www.youtube.com/watch?v=9T0wlKdew6I
 
-
+- The Saturated Model and Deviance Statistics are part of Generalized Linear Models and are intended to be used in a very wide variety of situations.
+- We can it Saturated Model because it maxes out the number of parameters we can estimate
+- Ideally, we want the likelihood of the data given our proposed model to be larger than the Null Model and close to the Saturated Model
+- When using the likelihoods, we use the Null and Saturated Models to determine whether the Proposed Model does a good job with the data
+![image](https://user-images.githubusercontent.com/60442877/149611515-382d514e-f681-47da-805f-f7fc31554070.png)
+- In summary, the log-likelihood of the Saturated Model ensures that the R-square value ranges between 0 and 1
+- Deviance (偏差), a concept related to the Saturated Model that will lead us to a p-value for the R-square
+- 1. Residual Deviance = 2*(LogLikelihood of Saturated Model - LogLikelihood of Proposed Model)
+- 2. Null Deviance = 2*(LogLikelihood of Saturated Model - LogLikelihood of Null Model)
+- 3. Null Deviance - Residual Deviance
 
 # 4. Generalized Linear Model
 
