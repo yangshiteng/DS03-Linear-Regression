@@ -183,6 +183,22 @@ Changing logistic regression from binomial to multinomial probability requires a
 
 ### 3.83 https://www.youtube.com/watch?v=BfKanl1aSG0
 
+### 3.89 https://www.youtube.com/watch?v=xxFYro8QuXA
+
+- R-squared is a goodness-of-fit measure for linear regression models. This statistic indicates the percentage of the variance in the dependent variable that the independent variables explain collectively. R-squared measures the strength of the relationship between your model and the dependent variable on a convenient 0 – 100% scale.
+- R-Squared is a statistical measure of fit that indicates how much variation of a dependent variable is explained by the independent variable(s) in a regression model.
+- R-Squared for Linear Regression:
+![image](https://user-images.githubusercontent.com/60442877/149610597-2894f0f6-e8f7-4a5e-b52e-67f7fbeec262.png)
+- The log-likelihood of logistic regression is the sum of the log of the predicted probability being the true label
+- The overall probability being positive label is equal to (the number of positive/ the total number)
+- The log-likelihood of overall probability is equal to the sum of the log of the overall probability being the true label
+- The R-square in logistic regression is given:
+![image](https://user-images.githubusercontent.com/60442877/149610769-e6f7f370-9947-427d-be25-3f8ac690eab7.png)
+- P value is calculated by following equation:
+![image](https://user-images.githubusercontent.com/60442877/149610787-fc2832f9-778e-4861-b4a5-6d96056b4e5c.png)
+
+
+
 
 
 # 4. Generalized Linear Model
