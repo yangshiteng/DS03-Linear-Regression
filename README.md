@@ -211,6 +211,26 @@ Changing logistic regression from binomial to multinomial probability requires a
 - 2. Null Deviance = 2*(LogLikelihood of Saturated Model - LogLikelihood of Null Model)
 - 3. Null Deviance - Residual Deviance
 
+### 3.86 https://www.youtube.com/watch?v=JC56jS2gVUE
+
+- Residual Deviance = 2 * (LogLikelihood of Saturated Model - LogLikelihood of Proposed Model)
+- Deviance Residuals are just the square root of 2 * (log(density function value of point x1 from Saturated Model) - log(density function value of point x1 from Proposed Model))
+![image](https://user-images.githubusercontent.com/60442877/149622424-0c04a5a7-d04a-449d-ab00-8b506c6d5403.png)
+![image](https://user-images.githubusercontent.com/60442877/149622687-0db79750-a698-4d62-a03f-c2bbafcf8ee9.png)
+
+
+
+### 3.87 https://www.youtube.com/watch?v=C4N3_XJJ-jU
+
+- Logistic Regression in R
+
+### 3.88 https://www.youtube.com/watch?v=ARfXDSkQf1Y
+
+- Odds and Log(Odds)
+- Odds are not probability
+- Odds are the ratio of something happening over something not happening 
+- Probability is the ratio of something happening over everyting that could happen
+
 # 4. Generalized Linear Model
 
 In statistics, a generalized linear model (GLM) is a flexible generalization of ordinary linear regression. The GLM generalizes linear regression by allowing the linear model to be related to the response variable via a link function and by allowing the magnitude of the variance of each measurement to be a function of its predicted value.
